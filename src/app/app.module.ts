@@ -7,6 +7,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MaterialModule } from './modules/material/material.module';
 import { IndexComponent } from './pages/Student/index/index.component';
+import { CreateDialogModule } from './dialogs/Student/create-dialog/create-dialog.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { IndexComponent } from './pages/Student/index/index.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    CreateDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

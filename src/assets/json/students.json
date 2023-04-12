@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Josué Alonso",
+    "lastName": "Camacho Montijo",
+    "email": "jcamacho@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Nancy",
+    "lastName": "Ruíz Domínguez",
+    "email": "NRuiz_dom@hotmail.com"
+  },
+  {
+    "id": 3,
+    "name": "Oscar Manuel",
+    "lastName": "Mendoza Rosas",
+    "email": "oscar.mendoza@gmail.com"
+  },
+  {
+    "id": 4,
+    "name": "Laura Andrea",
+    "lastName": "Almanza García",
+    "email": "lalmanza23@hotmail.com"
+  },
+  {
+    "id": 5,
+    "name": "Fernanda",
+    "lastName": "Velázquez Tovar",
+    "email": "v.Fernanda@gmail.com"
+  }
+]
