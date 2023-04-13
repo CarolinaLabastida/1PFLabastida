@@ -9,7 +9,11 @@ export interface student{
   id: number,
   name: string,
   lastName: string,
-  email:string
+  email:string,
+  phone: string,
+  birthDate: Date,
+  gender:string
+  course:string
 }
 
 @Component({
@@ -20,7 +24,7 @@ export interface student{
 
 export class IndexComponent {
   students : student[] = studentList;
-  displayedColumns: string[] = ['actions','id', 'name', 'lastName', 'email'];
+  displayedColumns: string[] = ['actions','id', 'fullName', 'email','phone','birthDate', 'gender', 'course'];
   dataSource = [...this.students];
   length: number = this.dataSource.length;
 
@@ -34,7 +38,7 @@ export class IndexComponent {
   constructor(public dialog: MatDialog){}
   openCreateStudentDialog(): void{
     const dialogRef = this.dialog.open(CreateDialogComponent, {
-      data: {name: '', lastName: '', email: ''}
+      data: {name: '', lastName: '', email: '', phone: '', birthDate: '', gender: '', course: ''}
     })
     dialogRef.afterClosed().subscribe(result => {
       if(result){
@@ -47,7 +51,9 @@ export class IndexComponent {
 
   editData(i: number): void{
     const dialogRef = this.dialog.open(CreateDialogComponent, {
-      data: {name: this.dataSource[i].name, lastName: this.dataSource[i].lastName, email: this.dataSource[i].email}
+      data: {name: this.dataSource[i].name, lastName: this.dataSource[i].lastName, 
+        email: this.dataSource[i].email, phone: this.dataSource[i].phone, birthDate: this.dataSource[i].birthDate,
+         gender: this.dataSource[i].gender, course: this.dataSource[i].course}
     })
     dialogRef.afterClosed().subscribe(result => {
       if(result){
